@@ -123,7 +123,7 @@ func TestPolicyCompatibility(t *testing.T) {
 			{"name": "TestLabelsPresence",  "argument": {"labelsPresence"  : {"labels" : ["foo"], "presence":true}}}
 		  ],"priorities": [
 			{"name": "EqualPriority",   "weight": 2},
-			{"name": "ImageLocalityPriority",   "weight": 2},
+			{"name": "Priority",   "weight": 2},
 			{"name": "LeastRequestedPriority",   "weight": 2},
 			{"name": "BalancedResourceAllocation",   "weight": 2},
 			{"name": "SelectorSpreadPriority",   "weight": 2},
@@ -199,7 +199,7 @@ func TestPolicyCompatibility(t *testing.T) {
 				}},
 				Score: config.PluginSet{Enabled: []config.Plugin{
 					{Name: "NodeResourcesBalancedAllocation", Weight: 2},
-					{Name: "ImageLocality", Weight: 2},
+					{Name: "", Weight: 2},
 					{Name: "InterPodAffinity", Weight: 2},
 					{Name: "NodeResourcesLeastAllocated", Weight: 2},
 					{Name: "NodeResourcesMostAllocated", Weight: 2},

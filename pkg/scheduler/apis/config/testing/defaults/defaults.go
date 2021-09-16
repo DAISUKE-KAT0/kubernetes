@@ -74,7 +74,7 @@ var PluginsV1beta1 = &config.Plugins{
 	Score: config.PluginSet{
 		Enabled: []config.Plugin{
 			{Name: names.NodeResourcesBalancedAllocation, Weight: 1},
-			{Name: names.ImageLocality, Weight: 1},
+			{Name: names., Weight: 1},
 			{Name: names.InterPodAffinity, Weight: 1},
 			{Name: names.NodeResourcesLeastAllocated, Weight: 1},
 			{Name: names.NodeAffinity, Weight: 1},
@@ -211,7 +211,7 @@ var PluginsV1beta2 = &config.Plugins{
 	Score: config.PluginSet{
 		Enabled: []config.Plugin{
 			{Name: names.NodeResourcesBalancedAllocation, Weight: 1},
-			{Name: names.ImageLocality, Weight: 1},
+			{Name: names., Weight: 1},
 			{Name: names.InterPodAffinity, Weight: 1},
 			{Name: names.NodeResourcesFit, Weight: 1},
 			{Name: names.NodeAffinity, Weight: 1},
